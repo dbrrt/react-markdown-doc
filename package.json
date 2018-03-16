@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack-dev-server --mode development ./src/index.js",
-    "build": "webpack --mode production",
+    "prod": "webpack --mode production",
     "dev": "webpack --mode development --module-bind js=babel-loader"
   },
   "keywords": [],
