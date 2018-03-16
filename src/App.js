@@ -4,11 +4,9 @@ import ReactDOM from "react-dom";
 const App = () => {
   return (
     <div>
-      <p>Hello there</p>
+      <p>Hello </p>
     </div>
   );
 };
 
-export default App;
-
-ReactDOM.render(<App />, document.getElementById("app"));
+export { App }
