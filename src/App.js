@@ -10,10 +10,15 @@ import { createBrowserHistory } from 'history'
 type Props = {};
 type State = {};
 
+import { Button } from './Button'
+
 class Hello extends PureComponent<Props, State> {
   render = () => (
     <Fragment>
       Hello there
+      <br />
+      <Button />
+      <br />
       <Link to='/b'>Go to B</Link>
     </Fragment>
   )
