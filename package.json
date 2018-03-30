@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack-dev-server --mode development ./src/index.js",
+    "start": "webpack-dev-server --mode development ./src/index.js  --host 0.0.0.0 --history-api-fallback",
     "prod": "webpack --mode production",
     "dev": "webpack --mode development --module-bind js=babel-loader"
   },
@@ -17,6 +17,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "flow-babel-webpack-plugin": "^1.1.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.0.6",
     "react": "^16.2.0",
@@ -25,6 +26,9 @@
     "webpack-cli": "^2.0.12"
   },
   "dependencies": {
+    "history": "^4.7.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "webpack-dev-server": "^3.1.1"
   }
 }

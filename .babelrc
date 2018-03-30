@@ -1,5 +1,6 @@
 {
-    "presets": [
-        "env", "react"
-    ]
+  "presets": ["env", "es2015", "react", "flow", "stage-2"],
+  "plugins" : [
+    "transform-flow-comments"
+  ]
 }
