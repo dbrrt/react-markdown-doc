@@ -14,6 +14,9 @@ class Route2 extends PureComponent {
   render = () => <Fragment>Route2</Fragment>
 }
 
+class NoMatch extends PureComponent {
+  render = () => <Fragment>404: Not Found</Fragment>
+}
 
 const history = createBrowserHistory()
 
@@ -23,6 +26,7 @@ const App = () => {
       <Switch>
         <Route exact name='route1' path='/' component={Hello} />
         <Route exact name='route2' path='/a' component={Route2} />
+        <Route component={NoMatch}/>
       </Switch>
     </Router>
   );
