@@ -3,15 +3,25 @@ import PropTypes from 'prop-types'
 import ReactDOM from "react-dom";
 
 // Router
-import { Router, Switch, Route } from 'react-router-dom'
+import { Router, Switch, Route, Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 
 class Hello extends PureComponent {
-  render = () => <Fragment>Hello</Fragment>
+  render = () => (
+    <Fragment>
+      Home
+      <Link to='/a'>Go to A</Link>
+    </Fragment>
+  )
 }
 
 class Route2 extends PureComponent {
-  render = () => <Fragment>Route2</Fragment>
+  render = () => (
+    <Fragment>
+      Route 2
+      <Link to='/'>Go to Home</Link>
+    </Fragment>
+  )
 }
 
 class NoMatch extends PureComponent {
