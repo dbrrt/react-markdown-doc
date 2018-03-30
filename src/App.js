@@ -1,3 +1,4 @@
+/* @flow */
 import React, { PureComponent, Fragment } from "react";
 import PropTypes from 'prop-types'
 import ReactDOM from "react-dom";
@@ -6,16 +7,19 @@ import ReactDOM from "react-dom";
 import { Router, Switch, Route, Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 
-class Hello extends PureComponent {
+type Props = {};
+type State = {};
+
+class Hello extends PureComponent<Props, State> {
   render = () => (
     <Fragment>
-      Home
+      Hello there
       <Link to='/a'>Go to A</Link>
     </Fragment>
   )
 }
 
-class Route2 extends PureComponent {
+class Route2 extends PureComponent<Props, State> {
   render = () => (
     <Fragment>
       Route 2
@@ -24,7 +28,7 @@ class Route2 extends PureComponent {
   )
 }
 
-class NoMatch extends PureComponent {
+class NoMatch extends PureComponent<Props, State> {
   render = () => <Fragment>404: Not Found</Fragment>
 }
 

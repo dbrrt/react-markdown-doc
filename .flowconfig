@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/webpack-cli/*
+
+[include]
+.*/node_modules/*
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='.*\(.css\)' -> 'empty/object'
+module.name_mapper='^~\/\(.*\)$' -> '<PROJECT_ROOT>/\1'
+
+[strict]
