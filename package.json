@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --mode development ./src/index.js  --host 0.0.0.0 --history-api-fallback",
-    "prod": "webpack --mode production",
+    "prod": "webpack --mode production  && echo '/*    /index.html   200' > dist/_redirects",
     "dev": "webpack --mode development --module-bind js=babel-loader"
   },
   "keywords": [],
