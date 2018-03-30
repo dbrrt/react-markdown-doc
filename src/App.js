@@ -14,7 +14,7 @@ class Hello extends PureComponent<Props, State> {
   render = () => (
     <Fragment>
       Hello there
-      <Link to='/a'>Go to A</Link>
+      <Link to='/b'>Go to B</Link>
     </Fragment>
   )
 }
