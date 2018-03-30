@@ -39,7 +39,7 @@ const App = () => {
     <Router history={history}>
       <Switch>
         <Route exact name='route1' path='/' component={Hello} />
-        <Route exact name='route2' path='/a' component={Route2} />
+        <Route exact name='route2' path='/b' component={Route2} />
         <Route component={NoMatch}/>
       </Switch>
     </Router>
