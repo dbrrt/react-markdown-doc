@@ -1,15 +1,16 @@
 import React, { PureComponent, Fragment } from 'react'
-import { Layout as LayoutAnt, Menu, Breadcrumb, Icon } from 'antd';
-const { SubMenu } = Menu;
-const { Header, Content, Sider } = LayoutAnt;
+import { Layout as LayoutAnt, Menu, Breadcrumb, Icon } from 'antd'
+const { SubMenu } = Menu
+const { Header, Content, Sider } = LayoutAnt
 
 import { Link } from 'react-router-dom'
+import './style.scss'
 
 class Layout extends PureComponent {
   constructor(props) {
     super(props)
     this.state = {
-      collapsed: false
+      collapsed: true
     }
   }
 
@@ -17,17 +18,18 @@ class Layout extends PureComponent {
     return (
       <Fragment>
         <LayoutAnt>
-          <Header className='header' style={{ padding: '0' }}>
+          <Header style={{ padding: '0' }}>
             <div className='logo' />
             <Menu
               theme='light'
               mode='horizontal'
               defaultSelectedKeys={['2']}
-              style={{ lineHeight: '64px' }}
+              style={{ lineHeight: '64px', height: 'inherit', borderBottom: 'solid 1px #E8E8E8' }}
             >
-              {/* <Menu.Item key='1'>Home</Menu.Item> */}
-              <Menu.Item key='2'>nav 2</Menu.Item>
-              <Menu.Item key='3'>nav 3</Menu.Item>
+              <Menu.Item key='1'>Home</Menu.Item>
+              <Menu.Item key='1' style={{ float: 'right' }}>
+                <Link to='/a'>Option 1</Link>
+              </Menu.Item>
             </Menu>
           </Header>
           <LayoutAnt>
@@ -56,6 +58,7 @@ class Layout extends PureComponent {
               collapsible
               collapsed={this.state.collapsed}
               onCollapse={(collapsed) => this.setState({ collapsed })}
+              style={{ marginTop: '0' }}
             >
               <div className='logo' />
               <Menu theme='dark' defaultSelectedKeys={['1']} mode='inline' style={{ minHeight: '100vh' }}>
