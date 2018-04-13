@@ -18,7 +18,7 @@ class Layout extends PureComponent {
     return (
       <Fragment>
         <LayoutAnt>
-          <Header style={{ padding: '0' }}>
+          <Header className='header' style={{ padding: '0' }}>
             <div className='logo' />
             <Menu
               theme='light'
@@ -26,34 +26,17 @@ class Layout extends PureComponent {
               defaultSelectedKeys={['2']}
               style={{ lineHeight: '64px', height: 'inherit', borderBottom: 'solid 1px #E8E8E8' }}
             >
-              <Menu.Item key='1'>Home</Menu.Item>
+              <Menu.Item key='109'>Home</Menu.Item>
+
               <Menu.Item key='1' style={{ float: 'right' }}>
-                <Link to='/a'>Option 1</Link>
+                <Link to='/a'>Option 2</Link>
+              </Menu.Item>
+              <Menu.Item key='1098' style={{ float: 'right' }}>
+                <Link to='/'>Applications</Link>
               </Menu.Item>
             </Menu>
           </Header>
           <LayoutAnt>
-            {/* <Sider width={200} style={{ background: '#fff' }}
-              collapsible
-              collapsed={this.state.collapsed}
-              onCollapse={(collapsed) => this.setState({ collapsed })}
-              >
-              <Menu
-                mode='inline'
-                defaultSelectedKeys={['1']}
-                defaultOpenKeys={['sub1']}
-                style={{ height: '100%', borderRight: 0 }}
-              >
-                <SubMenu key='sub1' title={<span><Icon type='user' />subnav 1</span>}>
-                  <Menu.Item key='1'>
-                    <Link to='/a'>Option 1</Link>
-                  </Menu.Item>
-                  <Menu.Item key='2'>
-                    <Link to='/'>Option 2</Link>
-                  </Menu.Item>
-                </SubMenu>
-              </Menu>
-            </Sider> */}
             <Sider
               collapsible
               collapsed={this.state.collapsed}
