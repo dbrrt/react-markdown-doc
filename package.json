@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --host 0.0.0.0 --history-api-fallback",
-    "prod": "webpack -p && cp .htaccess dist",
-    "deploy": "cd dist && git add --all && git push",
+    "prod": "webpack -p && mkdir -p dist/assets && cp assets/*.ipynb dist/assets/ && cp config/.htaccess dist",
     "dev": "webpack -d --module-bind js=babel-loader",
     "test": "jest -u"
   },
