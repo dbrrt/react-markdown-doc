@@ -52,6 +52,7 @@
     "webpack-cli": "^2.0.12"
   },
   "dependencies": {
+    "antd": "^3.4.1",
     "history": "^4.7.2",
     "markdown-loader": "^2.0.2",
     "marked": "^0.3.19",
