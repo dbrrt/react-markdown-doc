@@ -60,10 +60,11 @@
     "webpack-cli": "^2.0.12"
   },
   "dependencies": {
+    "@kyso/react-jupyter": "^0.2.1",
     "antd": "^3.4.1",
+    "axios": "^0.18.0",
     "history": "^4.7.2",
     "markdown-loader": "^2.0.2",
-    "marked": "^0.3.19",
     "raf-polyfill": "^1.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",

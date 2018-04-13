@@ -41,7 +41,7 @@ class Layout extends PureComponent {
               collapsible
               collapsed={this.state.collapsed}
               onCollapse={(collapsed) => this.setState({ collapsed })}
-              style={{ marginTop: '0' }}
+              style={{ marginTop: '2px' }}
             >
               <div className='logo' />
               <Menu theme='dark' defaultSelectedKeys={['1']} mode='inline' style={{ minHeight: '100vh' }}>
@@ -54,7 +54,7 @@ class Layout extends PureComponent {
                   title={<span><Icon type='user' /><span>User</span></span>}
                 >
                   <Menu.Item key='1'>
-                    <Link to='/a'>Option 1</Link>
+                    <Link to='/jup'>Jupyter</Link>
                   </Menu.Item>
                   <Menu.Item key='2'>
                     <Link to='/'>Option 2</Link>
