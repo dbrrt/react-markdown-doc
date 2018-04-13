@@ -6,6 +6,13 @@ const { Header, Content, Sider } = LayoutAnt;
 import { Link } from 'react-router-dom'
 
 class Layout extends PureComponent {
+  constructor(props) {
+    super(props)
+    this.state = {
+      collapsed: false
+    }
+  }
+
   render = () => {
     return (
       <Fragment>
@@ -24,11 +31,15 @@ class Layout extends PureComponent {
             </Menu>
           </Header>
           <LayoutAnt>
-            <Sider width={200} style={{ background: '#fff' }}>
+            <Sider width={200} style={{ background: '#fff' }}
+              collapsible
+              collapsed={this.state.collapsed}
+              onCollapse={(collapsed) => this.setState({ collapsed })}
+              >
               <Menu
                 mode='inline'
-                // defaultSelectedKeys={['1']}
-                // defaultOpenKeys={['sub1']}
+                defaultSelectedKeys={['1']}
+                defaultOpenKeys={['sub1']}
                 style={{ height: '100%', borderRight: 0 }}
               >
                 <SubMenu key='sub1' title={<span><Icon type='user' />subnav 1</span>}>

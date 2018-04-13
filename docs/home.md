@@ -145,3 +145,5 @@ Here's a "line block":
 | Line tree
 
 and images can be specified like so:
+
+![Image of Yaktocat](../assets/panda.jpg)

@@ -2,9 +2,116 @@
 
 exports[`Home Test Home component renders 1`] = `
 <div
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "<h1 id=\\"an-h1-header\\">An h1 header</h1>
+  className="ant-layout"
+>
+  <div
+    className="header ant-layout-header"
+  >
+    <div
+      className="logo"
+    />
+    <ul
+      aria-activedescendant=""
+      className="ant-menu ant-menu-dark ant-menu-root ant-menu-horizontal"
+      onKeyDown={[Function]}
+      role="menu"
+      style={
+        Object {
+          "lineHeight": "64px",
+        }
+      }
+      tabIndex="0"
+    />
+  </div>
+  <div
+    className="ant-layout ant-layout-has-sider"
+  >
+    <div
+      className="ant-layout-sider"
+      style={
+        Object {
+          "background": "#fff",
+          "flex": "0 0 200px",
+          "maxWidth": "200px",
+          "minWidth": "200px",
+          "width": "200px",
+        }
+      }
+    >
+      <div
+        className="ant-layout-sider-children"
+      >
+        <ul
+          aria-activedescendant=""
+          className="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+          onKeyDown={[Function]}
+          role="menu"
+          style={
+            Object {
+              "borderRight": 0,
+              "height": "100%",
+            }
+          }
+          tabIndex="0"
+        >
+          <li
+            className="ant-menu-submenu ant-menu-submenu-inline"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={undefined}
+          >
+            <div
+              aria-expanded={false}
+              aria-haspopup="true"
+              aria-owns="sub1$Menu"
+              className="ant-menu-submenu-title"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "paddingLeft": 24,
+                }
+              }
+              title={undefined}
+            >
+              <span>
+                <i
+                  className="anticon anticon-user"
+                />
+                subnav 1
+              </span>
+              <i
+                className="ant-menu-submenu-arrow"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="ant-layout"
+      style={
+        Object {
+          "padding": "0",
+        }
+      }
+    >
+      <div
+        className="ant-layout-content"
+        style={
+          Object {
+            "background": "#fff",
+            "margin": 0,
+            "minHeight": 280,
+            "padding": 24,
+          }
+        }
+      >
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<h1 id=\\"an-h1-header\\">An h1 header</h1>
 <p>Paragraphs are separated by a blank line.</p>
 <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
 look like:</p>
@@ -115,7 +222,11 @@ term/definition pair to spread things out more.)</p>
 | Line tree</p>
 <p>and images can be specified like so:</p>
 ",
-    }
-  }
-/>
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
 `;

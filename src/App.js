@@ -20,7 +20,7 @@ const App = () => {
     <Router history={history}>
       <Switch>
         <Route exact name='route1' path='/' component={Home} />
-        <Route component={NotFound}/>
+        <Route path='*' component={NotFound}/>
       </Switch>
     </Router>
   );
