@@ -14,13 +14,13 @@ class JupyterRenderer extends Component {
   }
 
   componentDidMount = () => {
-    axios.get('assets/python.ipynb')
-    .then((response) => {
-      const {
-        ['data']: notebookJSON
-      } = response
-      this.setState({ notebookJSON })
-    })
+    // axios.get('assets/python.ipynb')
+    // .then((response) => {
+    //   const {
+    //     ['data']: notebookJSON
+    //   } = response
+    //   this.setState({ notebookJSON })
+    // })
   }
 
   render = () => {
@@ -38,8 +38,6 @@ class JupyterRenderer extends Component {
           />
           : null
         }
-
-        Jupyter view
       </Fragment>
     )
   }

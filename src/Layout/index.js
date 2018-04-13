@@ -1,10 +1,10 @@
+
 import React, { PureComponent, Fragment } from 'react'
 import { Layout as LayoutAnt, Menu, Breadcrumb, Icon } from 'antd'
 const { SubMenu } = Menu
 const { Header, Content, Sider } = LayoutAnt
 
 import { Link } from 'react-router-dom'
-import './style.scss'
 
 class Layout extends PureComponent {
   constructor(props) {
@@ -15,6 +15,7 @@ class Layout extends PureComponent {
   }
 
   render = () => {
+
     return (
       <Fragment>
         <LayoutAnt>
@@ -57,7 +58,7 @@ class Layout extends PureComponent {
                     <Link to='/jup'>Jupyter</Link>
                   </Menu.Item>
                   <Menu.Item key='2'>
-                    <Link to='/'>Option 2</Link>
+                   <Link to='/'>Option 2</Link>
                   </Menu.Item>
                   <Menu.Item key='4'>Bill</Menu.Item>
                   <Menu.Item key='5'>Alex</Menu.Item>
