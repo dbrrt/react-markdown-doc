@@ -2,9 +2,7 @@ import React, { PureComponent, Fragment } from 'react'
 import { Layout as LayoutAnt, Menu, Breadcrumb, Icon } from 'antd'
 const { SubMenu } = Menu
 const { Header, Content, Sider } = LayoutAnt
-
 import { Link } from 'react-router-dom'
-import './style.scss'
 
 class Layout extends PureComponent {
   constructor(props) {

@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --host 0.0.0.0 --history-api-fallback",
-    "prod": "webpack -p && mkdir -p dist/assets && cp assets/*.ipynb dist/assets/ && cp config/.htaccess dist",
+    "prod": "webpack -p && cp config/.htaccess dist",
     "dev": "webpack -d --module-bind js=babel-loader",
-    "test": "jest -u"
+    "test": "jest -u",
+    "deploy": "cp -rf dist/* /Users/david/apache/"
   },
   "keywords": [],
   "author": "",
@@ -17,13 +18,17 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ],
+    "moduleNameMapper": {
+      "\\.(css|jpg|png)$": "<rootDir>/empty-module.js"
+    },
     "transform": {
       "^.+\\.md?$": "markdown-loader-jest",
       "^.+\\.js?$": "babel-jest"
     },
     "transformIgnorePatterns": [
       "node_modules",
-      "docs/*.md"
+      "docs/*.md",
+      "assets"
     ],
     "setupFiles": [
       "raf/polyfill"
@@ -59,7 +64,6 @@
     "webpack-cli": "^2.0.12"
   },
   "dependencies": {
-    "@kyso/react-jupyter": "^0.2.1",
     "antd": "^3.4.1",
     "axios": "^0.18.0",
     "history": "^4.7.2",

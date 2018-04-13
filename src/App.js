@@ -9,7 +9,7 @@ import { createBrowserHistory } from 'history'
 
 import { Home } from './Home'
 import { NotFound } from './NotFound'
-import { JupyExample } from './JupyExample'
+// import { JupyExample } from './JupyExample'
 
 type Props = {};
 type State = {};
@@ -21,7 +21,7 @@ const App = () => {
     <Router history={history}>
       <Switch>
         <Route exact name='route1' path='/' component={Home} />
-        <Route exact name='jupyter' path='/jup' component={JupyExample} />
+        {/* <Route exact name='jupyter' path='/jup' component={JupyExample} /> */}
         <Route path='*' component={NotFound}/>
       </Switch>
     </Router>
