@@ -1,6 +1,13 @@
 {
-  "presets": ["env", "es2015", "react", "flow", "stage-2"],
+  "presets": ["env", "react", "flow", "stage-2"],
   "plugins" : [
-    "transform-flow-comments"
+    "transform-flow-comments",
+    ["module-resolver", {
+      "root": ["."],
+        "alias": {
+          "~": "./"
+        }
+      }
+    ]
   ]
 }
