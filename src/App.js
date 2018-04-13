@@ -8,13 +8,10 @@ import { Router, Switch, Route, Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 
 import { Home } from './Home'
+import { NotFound } from './NotFound'
 
 type Props = {};
 type State = {};
-
-class NoMatch extends PureComponent<Props, State> {
-  render = () => <Fragment>404: Not Found</Fragment>
-}
 
 const history = createBrowserHistory()
 
@@ -23,7 +20,7 @@ const App = () => {
     <Router history={history}>
       <Switch>
         <Route exact name='route1' path='/' component={Home} />
-        <Route component={NoMatch}/>
+        <Route component={NotFound}/>
       </Switch>
     </Router>
   );

@@ -1,8 +1,9 @@
 import React, { PureComponent, Fragment } from 'react'
 import { MarkdownRenderer } from '../MarkdownRenderer'
-import md from '~/docs/home.md'
+import md from '~/docs/not-found.md'
 
-class Home extends PureComponent {
+class NotFound extends PureComponent {
   render = () => <MarkdownRenderer md={md} />
 }
-export { Home }
+
+export { NotFound }

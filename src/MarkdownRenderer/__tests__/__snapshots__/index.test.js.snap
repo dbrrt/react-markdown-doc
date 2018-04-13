@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown Component Test Markdown Component Test renders 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "#TITLE
+##SUB1",
+    }
+  }
+/>
+`;
