@@ -13,7 +13,7 @@ YASSIG was developed to provide a SSG easy to maintain and as modular as possibl
 Assuming that a file `foo.md` has been added in the `docs`  folder, to export it just add a line like the below in `docs/index.js` :
 
 ``` JavaScript
-export { default as foo } from './foo.md'`
+export { default as foo } from './foo.md'
 ```
 Repeat the process for any markdown file that you'd like to expose as Views
 
