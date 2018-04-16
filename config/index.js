@@ -1,6 +1,4 @@
-import React, { PureComponent } from 'react'
 import { composeMD } from './utils'
-
 import {
   home,
   notFound,
