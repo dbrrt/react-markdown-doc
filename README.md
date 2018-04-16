@@ -73,14 +73,9 @@ const sidebar = [
 ```
 
 ## Markdown Rendering
-```mermaid
-graph TD
-A[Markdown files :  docs/*.md] -->|Webpack4 transpilation : js, jpg, md etc...| B[Routes declaration : config/index.js]
-B --> C[React Rendering]
-C -->|/| D[Home]
-C -->|/contact| E[Contact]
-C -->|*| F[NotFound]
-```
+
+<img src='https://user-images.githubusercontent.com/15275110/38827265-a5c5e5a8-41b2-11e8-86de-010fc20cd2ef.png'
+ width='400' />
 
 ## Starting the app
 
