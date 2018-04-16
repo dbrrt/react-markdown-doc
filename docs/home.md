@@ -146,4 +146,5 @@ Here's a "line block":
 
 and images can be specified like so:
 
-![Image of Yaktocat](../assets/panda.jpg)
+![image1](../assets/panda.jpg)
+##### ref1

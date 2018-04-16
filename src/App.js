@@ -15,6 +15,8 @@ type State = {};
 
 const history = createBrowserHistory()
 
+import './theme/base.scss'
+
 const App = () => {
   return (
     <Router history={history}>

@@ -13,6 +13,7 @@
 
 [options]
 module.name_mapper='.*\(.css\)' -> 'empty/object'
+module.name_mapper='.*\(.scss\)' -> 'empty/object'
 module.name_mapper='^~\/\(.*\)$' -> '<PROJECT_ROOT>/\1'
 
 [strict]
