@@ -23,7 +23,6 @@ class Layout extends PureComponent {
             <Menu
               theme='light'
               mode='horizontal'
-              defaultSelectedKeys={['2']}
               style={{ lineHeight: '64px', height: 'inherit', borderBottom: 'solid 1px #E8E8E8' }}
             >
               <Link to={navLeft.path}>
@@ -50,15 +49,6 @@ class Layout extends PureComponent {
               style={{ marginTop: '2px' }}
             >
               <Menu theme='dark'  mode='inline' style={{ minHeight: '100vh' }}>
-                {/* <Menu.Item key='option_test' style={{ marginTop: '0' }}>
-                  <Icon type='desktop' />
-                  <span>Option 2</span>
-                </Menu.Item>
-
-                <Menu.Item key='9'>
-                  <Icon type='file' />
-                  <span>File</span>
-                </Menu.Item> */}
                 {sidebar.map((el, i) => (
                   <Menu.Item key={i}>
                     <Link to={el.path}>
