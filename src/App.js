@@ -7,9 +7,8 @@ import ReactDOM from 'react-dom'
 import { Router, Switch, Route, Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 
-import { Home } from './Home'
 import { NotFound } from './NotFound'
-// import { JupyExample } from './JupyExample'
+import { routes } from '~/config'
 
 type Props = {};
 type State = {};
@@ -20,9 +19,9 @@ const App = () => {
   return (
     <Router history={history}>
       <Switch>
-        <Route exact name='route1' path='/' component={Home} />
-        {/* <Route exact name='jupyter' path='/jup' component={JupyExample} /> */}
-        <Route path='*' component={NotFound}/>
+        {routes.map((el: any, i: number) => (
+          <Route exact name={i} key={i} path={el.path} component={el.component} />
+        ))}
       </Switch>
     </Router>
   );

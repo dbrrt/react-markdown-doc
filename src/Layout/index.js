@@ -4,6 +4,8 @@ const { SubMenu } = Menu
 const { Header, Content, Sider } = LayoutAnt
 import { Link } from 'react-router-dom'
 
+import { navLeft, navRight, sidebar } from '~/config'
+
 class Layout extends PureComponent {
   constructor(props) {
     super(props)
@@ -24,14 +26,20 @@ class Layout extends PureComponent {
               defaultSelectedKeys={['2']}
               style={{ lineHeight: '64px', height: 'inherit', borderBottom: 'solid 1px #E8E8E8' }}
             >
-              <Menu.Item key='109'>Home</Menu.Item>
+              <Link to={navLeft.path}>
+                <div style={{ float: 'left', marginLeft: '15px' }}>
+                  {navLeft.imgSrc && navLeft.imgSrc.length > 0  ?
+                    <img src={navLeft.imgSrc} style={{ height: '20px' }} />
+                  : navLeft.label}
+                </div>
+              </Link>
 
-              <Menu.Item key='1' style={{ float: 'right' }}>
-                <Link to='/a'>Option 2</Link>
-              </Menu.Item>
-              <Menu.Item key='1098' style={{ float: 'right' }}>
-                <Link to='/'>Applications</Link>
-              </Menu.Item>
+              {navRight.slice(0).reverse().map(((el, i) => (
+                <Menu.Item key={i} style={{ float: 'right' }}>
+                  <Link to={el.path}>{el.label}</Link>
+                </Menu.Item>
+              )))}
+
             </Menu>
           </Header>
           <LayoutAnt>
@@ -41,36 +49,24 @@ class Layout extends PureComponent {
               onCollapse={(collapsed) => this.setState({ collapsed })}
               style={{ marginTop: '2px' }}
             >
-              <div className='logo' />
-              <Menu theme='dark' defaultSelectedKeys={['1']} mode='inline' style={{ minHeight: '100vh' }}>
-                <Menu.Item key='option_test' style={{ marginTop: '0' }}>
+              <Menu theme='dark'  mode='inline' style={{ minHeight: '100vh' }}>
+                {/* <Menu.Item key='option_test' style={{ marginTop: '0' }}>
                   <Icon type='desktop' />
                   <span>Option 2</span>
                 </Menu.Item>
-                <SubMenu
-                  key='sub1'
-                  title={<span><Icon type='user' /><span>User</span></span>}
-                >
-                  <Menu.Item key='1'>
-                    <Link to='/jup'>Jupyter</Link>
-                  </Menu.Item>
-                  <Menu.Item key='2'>
-                    <Link to='/'>Option 2</Link>
-                  </Menu.Item>
-                  <Menu.Item key='4'>Bill</Menu.Item>
-                  <Menu.Item key='5'>Alex</Menu.Item>
-                </SubMenu>
-                <SubMenu
-                  key='sub2'
-                  title={<span><Icon type='team' /><span>Team</span></span>}
-                >
-                  <Menu.Item key='6'>Team 1</Menu.Item>
-                  <Menu.Item key='8'>Team 2</Menu.Item>
-                </SubMenu>
+
                 <Menu.Item key='9'>
                   <Icon type='file' />
                   <span>File</span>
-                </Menu.Item>
+                </Menu.Item> */}
+                {sidebar.map((el, i) => (
+                  <Menu.Item key={i}>
+                    <Link to={el.path}>
+                      <Icon type={el.icon} />
+                      <span>{el.label}</span>
+                    </Link>
+                  </Menu.Item>
+                ))}
               </Menu>
             </Sider>
             <LayoutAnt style={{ padding: '0' }}>

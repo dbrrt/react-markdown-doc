@@ -2,17 +2,15 @@
 import React, { PureComponent, Fragment } from 'react'
 import { Layout } from '../Layout'
 import { MarkdownRenderer } from '../MarkdownRenderer'
-// $FlowFixMe
-import md from '~/docs/home.md'
 
-type Props = {};
+type Props = { md: any };
 type State = {};
 
-class Home extends PureComponent<Props, State> {
+class GenericView extends PureComponent<Props, State> {
   render = () => (
     <Layout>
-      <MarkdownRenderer md={md} />
+      <MarkdownRenderer md={this.props.md} />
     </Layout>
   )
 }
-export { Home }
+export { GenericView }
