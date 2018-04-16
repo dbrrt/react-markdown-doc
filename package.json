@@ -1,11 +1,12 @@
 {
-  "name": "webpack4",
+  "name": "yassig",
   "version": "1.0.0",
-  "description": "",
+  "description": "YASSIG is a SSG built on top of React 16 and Webpack4, driven by Markdown",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --host 0.0.0.0 --history-api-fallback",
-    "prod": "webpack -p && cp config/.htaccess dist",
+    "prod": "webpack -p  && echo '/*    /index.html   200' > dist/_redirects",
+    "build": "webpack -p && cp config/.htaccess dist",
     "dev": "webpack -d --module-bind js=babel-loader",
     "test": "jest -u",
     "deploy": "cp -rf dist/* /Users/david/apache/"
@@ -45,6 +46,7 @@
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
     "file-loader": "^1.1.11",
     "flow-babel-webpack-plugin": "^1.1.1",
     "html-loader": "^0.5.5",

@@ -1,17 +1,18 @@
+// @flow
 import React, { PureComponent, Fragment } from 'react'
 import { Layout as LayoutAnt, Menu, Breadcrumb, Icon } from 'antd'
-const { SubMenu } = Menu
 const { Header, Content, Sider } = LayoutAnt
 import { Link } from 'react-router-dom'
-
+// UI configuration
 import { navLeft, navRight, sidebar } from '~/config'
 
-class Layout extends PureComponent {
-  constructor(props) {
+type Props = { children: any };
+type State = { collapsed: boolean };
+
+class Layout extends PureComponent<Props, State> {
+  constructor(props: Props) {
     super(props)
-    this.state = {
-      collapsed: true
-    }
+    this.state = { collapsed: true }
   }
 
   render = () => {
@@ -32,13 +33,11 @@ class Layout extends PureComponent {
                   : navLeft.label}
                 </div>
               </Link>
-
               {navRight.slice(0).reverse().map(((el, i) => (
                 <Menu.Item key={i} style={{ float: 'right' }}>
                   <Link to={el.path}>{el.label}</Link>
                 </Menu.Item>
               )))}
-
             </Menu>
           </Header>
           <LayoutAnt>
