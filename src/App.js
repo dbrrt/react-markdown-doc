@@ -1,7 +1,5 @@
 /* @flow */
-import React, { PureComponent, Fragment } from 'react'
-import PropTypes from 'prop-types'
-import ReactDOM from 'react-dom'
+import React from 'react'
 import { Router, Switch, Route, Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { routes } from '~/config'
