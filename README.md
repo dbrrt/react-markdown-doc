@@ -91,6 +91,14 @@ http://localhost:8080
 ```
 That's it.
 
+### Features
+
+- [x] React-router v4 integration
+- [x] webpack 4 integration
+- [x] Live demo
+- [ ] Code block render from Markdown
+- [ ] Responsive Layout
+
 ## Netlify deployment
 
 Configure a new project,
