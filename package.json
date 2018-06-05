@@ -11,7 +11,7 @@
     "test": "jest -u",
     "deploy": "cp -rf dist/* /Users/david/apache/"
   },
-  "keywords": [],
+  "keywords": ['SSG', 'React'],
   "author": "",
   "license": "ISC",
   "jest": {
