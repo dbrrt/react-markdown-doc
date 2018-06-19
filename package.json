@@ -1,7 +1,7 @@
 {
   "name": "yassig",
-  "version": "1.0.0",
-  "description": "YASSIG is a SSG built on top of React 16 and Webpack4, driven by Markdown",
+  "version": "1.0.1",
+  "description": "YASSIG is a SSG on top of React 16 and Webpack4, driven by Markdown",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --host 0.0.0.0 --history-api-fallback",
