@@ -58,19 +58,7 @@ module.exports = {
         }, {
             loader: "sass-loader" // compiles Sass to CSS
         }]
-      }//,
-      // {
-      //   test: /\.ipynb$/,
-      //   exclude: /node_modules/,
-      //   use: [
-      //     {
-      //       loader: "html-loader"
-      //     },
-      //     {
-      //       loader: 'ipynb-loader?cellsOnly=false',
-      //     }
-      //   ]
-      // }
+      }
     ]
   },
   plugins: [
