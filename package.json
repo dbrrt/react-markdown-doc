@@ -46,7 +46,7 @@
     "css-loader": "1.0.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
-    "eslint": "5.0.1",
+    "eslint": "5.1.0",
     "file-loader": "1.1.11",
     "flow-babel-webpack-plugin": "1.1.1",
     "html-loader": "0.5.5",
