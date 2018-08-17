@@ -1,6 +1,5 @@
 
 # React Markdown Doc
---
 
 Live Demo : https://lucid-newton-42e898.netlify.com/
 
