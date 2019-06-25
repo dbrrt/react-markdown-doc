@@ -45,7 +45,7 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "3.0.0",
     "enzyme": "3.10.0",
-    "eslint": "6.0.0",
+    "eslint": "6.0.1",
     "enzyme-adapter-react-16": "1.14.0",
     "file-loader": "4.0.0",
     "flow-babel-webpack-plugin": "1.1.1",
