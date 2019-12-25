@@ -6,6 +6,8 @@ Live Demo : https://lucid-newton-42e898.netlify.com/
 ## Motivation
 React Markdown Doc was developed to provide a SSG easy to maintain and as modular as possible, built on top of React 16 and Webpack4, it should also be compatible with mainstream static hosting platforms (Apache, now, netlify, surge etc...).
 
+[EDIT - DEC2019: I did find docusaurus which is offering similar features, no enhancement is planned for this project]
+
 ## Usage
 
 ### Exporting markdown files
