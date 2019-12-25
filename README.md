@@ -3,10 +3,10 @@
 
 Live Demo : https://lucid-newton-42e898.netlify.com/
 
-## Motivation
+## Laconic
 React Markdown Doc was developed to provide a SSG easy to maintain and as modular as possible, built on top of React 16 and Webpack4, it should also be compatible with mainstream static hosting platforms (Apache, now, netlify, surge etc...).
 
-[EDIT - DEC2019: I did find docusaurus which is offering similar features, no enhancement is planned for this project]
+> DEC2019: I did find docusaurus which is offering similar features, so no enhancement is planned for this project
 
 ## Usage
 
@@ -90,7 +90,7 @@ http://localhost:8080
 ```
 That's it.
 
-### Features
+### Roadmap
 
 - [x] React-router v4 integration
 - [x] webpack 4 integration
