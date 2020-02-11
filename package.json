@@ -63,7 +63,7 @@
     "sass-loader": "8.0.2",
     "webpack": "4.41.5",
     "style-loader": "1.1.3",
-    "webpack-cli": "3.3.10"
+    "webpack-cli": "3.3.11"
   },
   "dependencies": {
     "antd": "^3.4.1",
