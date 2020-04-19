@@ -50,7 +50,7 @@
     "file-loader": "6.0.0",
     "flow-babel-webpack-plugin": "1.1.1",
     "html-loader": "1.0.0",
-    "html-webpack-plugin": "4.0.1",
+    "html-webpack-plugin": "4.0.2",
     "image-webpack-loader": "6.0.0",
     "jest": "25.2.0",
     "jest-cli": "25.2.0",
